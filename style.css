@@ -133,26 +133,12 @@ div {
   margin: 10px;
 }
 
-  .button {
-    background-image: linear-gradient(rgb(255, 255, 230), rgba(190, 190, 190, 0.8));
-    width: auto;
-    min-width: 80px;
-    margin: 20px;
-    height:35px;
-    border: 1px solid grey;
-    border-radius: 3px 8px 3px 8px;
-    text-align: center;
-    overflow-wrap: break-word;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    vertical-align: center;
-    box-shadow: 3px 3px 5px #1d1d1d;
-    padding-bottom: 8px;  
-  }
 
   .wrapper {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
 
@@ -167,9 +153,162 @@ section {
 
 .sectionFiller {
   background-color:rgb(22, 22, 22);
-  padding: 75px;
+  padding: 75px 75px 0px 75px;
   display:flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   height:100%;
   width:100%;
+}
+
+.sectionFiller p {  
+  color: rgb(95, 95, 95);
+  font-size: 2.2vh;
+  letter-spacing: 2.5px;
+  font-weight: lighter;
+  margin: 10px;
+}
+
+.heading {
+  display:flex;
+  flex-direction:column;
+  width: 100%;
+  padding-bottom: 55px;
+}
+
+.sectionFiller h2 {
+  padding: 20px, 20px;
+  display: block;
+  color: rgb(24, 77, 77);
+  font-family: 'Arial Narrow Bold', Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: heavy;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 10px rgb(5, 5, 5);
+}
+
+.sectionFiller h3 {
+  padding: 10px, 15px;
+  display: block;
+  font-family: 'Arial Narrow Bold', Helvetica, sans-serif;
+  color: rgb(126, 126, 126);
+  font-size: 15px;
+  letter-spacing: 2.5px;
+}
+
+.leftwing {
+  width:17%;
+  height: 200px;
+  margin: 25px 25px;
+  background-image: linear-gradient(rgba(24, 56, 56, 1), rgb(5, 5, 5, 0));
+  border-radius: 5px 20px 5px 20px;
+  padding:  10px;
+  text-align: left;
+}
+
+.mainphoto {
+  width: 50%;
+  background-color:rgba(24, 56, 56, 1);
+  border-radius: 999px;
+  overflow:hidden;
+}
+
+.mainphoto img {
+  flex-basis:auto;
+  width:100%;
+}
+
+
+.rightwing {
+  width:17%;
+  height: 200px;
+  margin: 25px 25px;
+  background-image: linear-gradient(rgba(24, 56, 56, 1), rgb(5, 5, 5, 0));
+  border-radius: 20px 5px 20px 5px;
+  padding:  10px;
+  text-align: left;
+}
+
+.bodywrapper {
+  display:flex;
+  width: 100%;
+  justify-content:space-between;
+  align-items: center;
+  margin-bottom: 55px;
+  flex-wrap: wrap;
+}
+
+.edu {
+
+width: 30%;
+background-color:rgb(44, 44, 44);
+box-shadow: 3px 3px 5px rgb(5, 5, 5);
+border-radius: 20px 5px 20px 5px;
+text-align: left;
+padding: 25px;
+height: 100%;
+
+}
+
+.portdesc {
+  width: 45%;
+background-color:rgb(44, 44, 44);
+box-shadow: 3px 3px 5px rgb(5, 5, 5);
+border-radius: 5px 20px 5px 20px;
+text-align: left;
+display:flex;
+flex-direction: column;
+padding: 25px;
+margin:20px;
+}
+
+.portmain {
+  width: 45%;
+background-color:rgb(22, 22, 22);
+border-color: rgb(5, 5, 5);
+border-radius: 20px 5px 20px 5px;
+border: solid 3px;
+text-align: left;
+display:flex;
+overflow:hidden;
+}
+
+.portmain img {
+  flex-basis:auto;
+  width:100%;
+}
+
+
+
+.portfolio {
+  justify-content: center;
+}
+
+.portsmall {
+  width: 12%;
+  margin: 15px;
+  background-color:rgb(22, 22, 22);
+  border-color: rgb(5, 5, 5);
+  border-radius: 25px 25px 25px 25px;
+  border: solid 3px;
+  text-align: left;
+  display:flex;
+  overflow:hidden;
+
+}
+
+.portsmall img {
+    flex-basis:auto;
+    width:100%;
+}
+
+.music {
+  flex-direction:column;
+}
+
+.music iframe {
+  margin: 25px;
+  width:567px; 
+  height:319px;
 }
