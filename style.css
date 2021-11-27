@@ -32,7 +32,8 @@ div {
       border-color: rgb(0, 0, 0);
       position: sticky;
       top: 0;
-      padding: 9px 3px 0px 3px
+      padding: 9px 3px 0px 3px;
+      z-index: 999;
       
   }
 
@@ -242,36 +243,51 @@ section {
 .edu {
 
 width: 30%;
-background-color:rgb(44, 44, 44);
-box-shadow: 3px 3px 5px rgb(5, 5, 5);
+background-color:rgb(22, 22, 22);
+box-shadow: 3px 3px 3px rgb(15, 15, 15);
 border-radius: 20px 5px 20px 5px;
 text-align: left;
 padding: 25px;
 height: 100%;
+transition: 1s;
 
 }
 
+.edu:hover {
+  background-color:rgb(44, 44, 44);
+  transition: 1s;
+  box-shadow: 7px 7px 7px rgb(15, 15, 15);
+  border-radius: 5px 20px 5px 20px;
+}
+
+.portmain {
+  width: 90%;
+background-color:rgb(22, 22, 22);
+border-radius: 20px 5px 20px 5px;
+text-align: left;
+display:flex;
+overflow:hidden;
+margin:20px;
+position: relative;
+transition: 0.5s;
+}
+
 .portdesc {
-  width: 45%;
-background-color:rgb(44, 44, 44);
-box-shadow: 3px 3px 5px rgb(5, 5, 5);
-border-radius: 5px 20px 5px 20px;
+width: 33%;
+background-color:rgb(22, 22, 22);
+border-radius: 5px 0px 0px 5px;
 text-align: left;
 display:flex;
 flex-direction: column;
 padding: 25px;
-margin:20px;
+position: absolute;
+bottom: 25px;
+right: 0px;
+transition: 0.5s;
 }
 
-.portmain {
-  width: 45%;
-background-color:rgb(22, 22, 22);
-border-color: rgb(5, 5, 5);
-border-radius: 20px 5px 20px 5px;
-border: solid 3px;
-text-align: left;
-display:flex;
-overflow:hidden;
+.portdescsmall {
+  padding: 10px;
 }
 
 .portmain img {
@@ -279,28 +295,43 @@ overflow:hidden;
   width:100%;
 }
 
+.portblur {
+  width:100%;
+  height:100%;
+  border-radius: 20px 5px 20px 5px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  position: absolute;
+  background-color:rgba(24, 56, 56, 0.658);
+  transition: 0.5s;
+}
 
+.portmain:hover {
+  box-shadow: 7px 7px 7px rgb(15, 15, 15);
+  transition: 0.5s;
+}
 
-.portfolio {
-  justify-content: center;
+.portmain:hover .portdesc {
+  background-color:rgb(44, 44, 44);
+  transition: 0.5s;
+
+}
+
+.portmain:hover .portblur {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  position: absolute;
+  background-color:rgba(24, 56, 56, 0);
+  transition: 0.5s;
 }
 
 .portsmall {
-  width: 12%;
-  margin: 15px;
-  background-color:rgb(22, 22, 22);
-  border-color: rgb(5, 5, 5);
-  border-radius: 25px 25px 25px 25px;
-  border: solid 3px;
-  text-align: left;
-  display:flex;
-  overflow:hidden;
-
+  width: 45%;
 }
 
-.portsmall img {
-    flex-basis:auto;
-    width:100%;
+.portfolio {
+  justify-content: center;
+  margin-bottom: 15px;
 }
 
 .music {
@@ -311,4 +342,35 @@ overflow:hidden;
   margin: 25px;
   width:567px; 
   height:319px;
+}
+
+.contactcard {
+  width: 80%;
+  border-radius: 20px;
+  background-color:rgb(44, 44, 44);
+  box-shadow: 7px 7px 7px rgb(15, 15, 15);
+  height: 400px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.contactform {
+  width:40%;
+  background-color:rgb(70, 70, 70);
+  box-shadow: 7px 7px 7px rgb(36, 36, 36);
+  height: 300px;
+  margin: 25px;
+  padding: auto 0;
+  border-radius: 20px;
+}
+
+.contactdesc {
+  width:40%;
+  text-align: right;
+  vertical-align: middle;
+  height: 300px;
+  margin: 25px;
+  padding: 90px 10px;
 }
