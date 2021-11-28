@@ -212,6 +212,13 @@ section {
   flex: 3 1 17%;
 }
 
+.leftwing p {
+  font-weight: normal;
+  color:rgb(138, 138, 138);
+  font-size: 14px;
+  line-height: 1.2;
+}
+
 .mainphoto {
   width: 45%;
   background-color:rgba(24, 56, 56, 1);
@@ -240,6 +247,8 @@ section {
   margin-bottom: 55px;
   flex-wrap: wrap;
 }
+
+
 
 .edu {
 
