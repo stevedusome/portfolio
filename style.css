@@ -440,7 +440,7 @@ footer img {
   }
 
   .sectionFiller {
-    padding: 35px 35px 0px 35px
+    padding: 45px 35px 0px 35px
   }
 }
 
@@ -450,7 +450,7 @@ footer img {
     padding-bottom: 0;
     justify-content: center;
     position: relative;
-    height: 330px;
+    height: 230px;
     flex-direction: column;
     align-items: center;
   }
@@ -458,6 +458,20 @@ footer img {
   .parent h1 {
     width: 100%;
     text-align: center;
+  }
+
+  .titlenest {
+    min-width: 0px;
+    width: 100%;
+    height: 22%;
+  }
+
+  .mainphoto {
+    margin: 0px 0px 5px 0px;
+  }
+
+  .title h1 {
+    letter-spacing: 10px;
   }
 
   .icon{
@@ -482,6 +496,10 @@ footer img {
 
   .portsmall {
     width: 90%;
+  }
+
+  .portdesc {
+    padding: 10px;
   }
 
   .nav {
@@ -520,4 +538,18 @@ footer img {
     width: 80%;
     padding: 35px;
   }
+}
+
+@media screen and (max-width: 575px) {
+
+
+  .music iframe {
+    margin: 15px 0px;
+    width:320px; 
+    height:160px;
+  }
+}
+
+.heading {
+  padding-bottom: 35px;
 }
