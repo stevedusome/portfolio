@@ -468,6 +468,10 @@ footer img {
     display:none;
   }
 
+  .mainphoto {
+    width: 75%;
+  }
+
   .bodywrapper {
     flex-direction: column;
   }
