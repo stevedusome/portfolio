@@ -16,8 +16,6 @@ p {
     font-size: 14px;
 }
 
-
-
 div {
     text-align: center;
   }
@@ -182,7 +180,7 @@ section {
   padding-bottom: 55px;
 }
 
-.sectionFiller h2 {
+.sectionFiller h2, h4, h5 {
   padding: 20px, 20px;
   display: block;
   color: rgb(24, 77, 77);
@@ -373,6 +371,7 @@ z-index:998;
   height:319px;
 }
 
+
 .contactcard {
   width: 80%;
   border-radius: 20px;
@@ -515,7 +514,7 @@ footer img {
   transition: 3s;
 }
 
-#projects:hover span {
+#projects:hover h4 {
   color: #b80e65;
   transition: 3s;
 }
@@ -549,7 +548,7 @@ footer img {
   transition: opacity 3s;
 }
 
-#contact:hover span {
+#contact:hover h5 {
   color: #1d1d66;
   transition: 3s;
 }
