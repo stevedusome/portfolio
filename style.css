@@ -233,6 +233,8 @@ section {
 .mainphoto img {
   flex-basis:auto;
   width:100%;
+  height: 100%;
+  align-self: flex-start;
 }
 
 
@@ -460,7 +462,11 @@ footer img {
   bottom: 0;
   right: 0;
   left: 0;
-  background-image: linear-gradient(rgb(24, 24, 24, 0), #8D5AC7, #49298E);
+  background: 
+    linear-gradient(#b63849, transparent),
+    linear-gradient(to top left, lime, transparent),
+    linear-gradient(to top right, blue, transparent);
+  background-blend-mode: screen;
   transition: opacity 3s;
   opacity: 0;
 }
@@ -476,7 +482,7 @@ footer img {
 }
 
 #me:hover h2 {
-  color: #49298E;
+  color: #6038b6;
   transition: 3s;
 }
 
@@ -664,6 +670,7 @@ footer img {
     width: 80%;
     padding: 10px;
     margin:25px 0px 25px 0px;
+    height: 40%;
   }
 }
 
