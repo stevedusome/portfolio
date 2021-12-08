@@ -196,7 +196,6 @@ section {
 #me .myname {
   position: relative;
   opacity: 1;
-  padding: 0px 20px 0px 20px;
 }
 
 #me:hover .myname {
@@ -222,6 +221,7 @@ text-shadow: none;
 opacity:0;
 transition: 3s;
 padding: 0px;
+margin-bottom: -59px;
 }
 
 #me:hover .mynameknockout {
@@ -232,7 +232,6 @@ padding: 0px;
 #me .edu-heading {
   position: relative;
   opacity: 1;
-  padding: 20px 20px 0px 20px;
 }
 
 #me:hover .edu-heading {
@@ -257,6 +256,7 @@ text-shadow: none;
 opacity:0;
 transition: 3s;
 padding: 0px;
+margin-bottom: -59px;
 }
 
 #me:hover .edu-headingknockout {
@@ -311,7 +311,7 @@ padding: 0px;
 }
 
 .nobottom {
-  padding-bottom: 0px;
+  padding-bottom: 10px;
 }
 
 
