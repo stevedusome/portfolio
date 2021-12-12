@@ -206,7 +206,7 @@ section {
 #me .mynameknockout {
   position: relative;
   top:-59px;
-  content:"STEVE DUSOME";
+  content:"";
   transition: 3s;
   background: 
   linear-gradient(#b63849, transparent),
